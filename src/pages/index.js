@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import {BsFillMoonStarsFill} from 'react-icons/bs'
-import {AiFillTwitterCircle, AiFillLinkedin,AiFillYoutube } from 'react-icons/ai';
+import {AiFillTwitterCircle, AiFillLinkedin,AiFillGithub } from 'react-icons/ai';
 import Image from "next/image"
-import  Images from '/public/Images.jpg'
+import  SAM from '/public/SAM.png'
 import  pic13 from '/public/pic13.jpg'
 import  pic2 from '/public/pic2.jpg'
 import  zulu from '/public/zulu.png' 
@@ -44,18 +44,20 @@ export default function Home() {
             <h3 className='text-2xl py-2 md:text-3xl'>
               Developer and Designer.
             </h3>
-            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-white'> Freelance lorem ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. </p>
+            <p className='text-md py-5 leading-8 text-gray-800 md:text-xl dark:text-white'> I am a responsible, self-motivated person, greatly expereienced from working in diverse environments, and an individual who aspires to achieve both organisational and personal goals that may be presented to me. I have just over 2 and a half years of experience as a junior software developer . As a self taught developer, I have contributed to over a dozen projects and repositories through out career. I have attended multiple BOOTcamps and internships such as GOOGLE Africa Developer scholarship (GADS) Andela Community among others, and this is where I was able to hone and refine my developer skills . </p>
 
           </div>
           <div className='text-5xl flex justify-center gap-16 py-3 text-gray-600'>
-            <AiFillTwitterCircle/>
-            <AiFillLinkedin/>
-            <AiFillYoutube/>
+            <AiFillTwitterCircle href=''/>
+
+           <a href='https://www.linkedin.com/in/samuel-mugo-7075201a1/'> <AiFillLinkedin /> </a> 
+           <a href='https://www.youtube.com/'><AiFillGithub/></a>
+           
 
           </div>
 
           <div className='relative rounded-full mx-auto bg-gradient-to-b from-teal-500 w-80 h-80 mt-20'>
-            <Image className='rounded-full overflow-hidden md:h-96 md:w-96' src={Images
+            <Image className=' overflow-hidden md:h-96 md:w-96' src={SAM
             } layout="fill" objectFit='cover' />
 
           </div>
@@ -65,18 +67,31 @@ export default function Home() {
 
 
 
+
+
+
+
+
+        
+
+
+
+
         <section>
           <div className='dark:text-white'>
-            <h3 className='text-3xl py-1'>
+            <h3 className='text-3xl py-1 text-center mt-20'>
               Services I offer
             </h3>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'> 
-            Freelance lorem ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
-            <span className='text-teal-500'> Agencies</span> Freelance lorem ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <span className='text-teal-500'> Startups</span>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
+            <p className='text-md text-center  py-2 leading-8 text-gray-800 dark:text-white'> 
+            Freelance. I am an experienced Website Developer who can help businesses with professional Website Development services in Kenya. This is the long run  becomes quite affordable as compared to hiring full-time employees. I am skilled in using the latest <span className='text-teal-500'> Website Development tools </span>and techniques to deliver effective results for all my  clients as well as  any type of organisations in general. Businesses can get their work done quickly. 
+
+            <br/>
+
+              <span className='text-teal-500'> Startups</span> was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             
             
             </p>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'> 
+            <p className='text-md  text-center py-2 leading-8 text-gray-800 dark:text-white'> 
             Freelance lorem ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
 
             
@@ -84,8 +99,28 @@ export default function Home() {
           </div>
 
           <div className='lg:flex gap-10 dark:text-white'>
+          <div className='m-auto text-center shadow-lg p-10 rounded-xl my-10 '>
+           
+          
+           <Image className='mx-auto'  src={pic13} width={100} height={100} />
+
+           
+            <h3 className='text-lg font-medium pt-8 pb-2'>
+              Beautiful Designs
+            </h3>
+            <p className='py-2'>
+              Creating elegant and exemplary designs fo all of yourneeds and future wants
+       </p>
+            <h4 className='py-4 text-teal-600'> Design stuff o use</h4>
+            <p className='text-gray-800 py-1'>Canva  </p>
+            <p className='text-gray-800 py-1'>Photoshop  </p>
+            <p className='text-gray-800 py-1'>NOVO  </p>
+            <p className='text-gray-800 py-1'>TAilwind  </p>
+          </div>
+
+
           <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-            <Image src={pic13} width={100} height={100} />
+            <Image className='mx-auto' src={pic2} width={100} height={100} />
             <h3 className='text-lg font-medium pt-8 pb-2'>
               Beautiful Designs
             </h3>
@@ -100,26 +135,10 @@ export default function Home() {
           </div>
 
 
-          <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-            <Image src={pic2} width={100} height={100} />
-            <h3 className='text-lg font-medium pt-8 pb-2'>
-              Beautiful Designs
-            </h3>
-            <p className='py-2'>
-              Creating elegant and exemplary designs fo all of yourneeds and future wants
-            </p>
-            <h4 className='py-4 text-teal-600'> Design stuff o use</h4>
-            <p className='text-gray-800 py-1'>Canva  </p>
-            <p className='text-gray-800 py-1'>Photoshop  </p>
-            <p className='text-gray-800 py-1'>NOVO  </p>
-            <p className='text-gray-800 py-1'>TAilwind  </p>
-          </div>
-
-
 
 
           <div className='text-center shadow-lg p-10 rounded-xl my-10'>
-            <Image src={zulu} width={100} height={100} />
+            <Image className='mx-auto' src={pic2} width={100} height={100} />
             <h3 className='text-lg font-medium pt-8 pb-2'>
               Beautiful Designs
             </h3>
@@ -138,11 +157,11 @@ export default function Home() {
 
         <section>
           <div className='dark:text-white'>
-            <h3 className='text-3xl py-1'>
+            <h3 className='text-3xl py-1 text-center'>
               Portfolio
 
             </h3>
-            <p className='text-md py-2 leading-8 text-gray-800 dark:text-white'> 
+            <p className='text-md text-center py-2 leading-8 text-gray-800 dark:text-white'> 
             Freelance lorem ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum. 
             <span className='text-teal-500'> Agencies</span> Freelance lorem ipsum Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. <span className='text-teal-500'> Startups</span>It was popularised in the 1960s with the release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop publishing software like Aldus PageMaker including versions of Lorem Ipsum.
             
@@ -152,35 +171,57 @@ export default function Home() {
 
           </div>
           <div className='flex flex-col gap-10 py-10 lg:flex-wrap'>
-            <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive" src={women
+                          
+                        <div className=' flex-col '>
+
+              <Image className='rounded-lg mx-auto ' width={'100%'}    src={pic2
               } />
+
+              <p className='text-center'> Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <br/> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  a galley of type and scrambled it to make a type specimen book. </p>
+              </div>
+
+            <div className=' flex-col '>
+
+              <Image className='rounded-lg mx-auto ' width={'100%'}    src={pic2
+              } />
+
+              <p className='text-center'> Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+              <br/> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, a galley of type and scrambled it to make a type specimen book. </p>
             </div>
 
-            <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive"  src={women
+            <div className=' flex-col '>
+
+              <Image className='rounded-lg mx-auto ' width={'100%'}    src={pic2
               } />
+
+              <p className='text-center'> Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+              <br/>  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  a galley of type and scrambled it to make a type specimen book. </p>
             </div>
 
-            <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive"  src={women
+            <div className=' flex-col '>
+
+              <Image className='rounded-lg mx-auto ' width={'100%'}    src={pic2
               } />
+
+              <p className='text-center'> Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> 
+               Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  a galley of type and scrambled it to make a type specimen book. </p>
             </div>
 
-            <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive"  src={women
-              } />
-            </div>
+                              <div className=' flex-col '>
 
-            <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive"  src={women
-              } />
-            </div>
-            <div className='basis-1/3 flex-1'>
-              <Image className='rounded-lg object-cover' width={'100%'} height={'100%'} layout="responsive"  src={women
-              } />
-            </div>
+                  <Image className='rounded-lg mx-auto ' width={'100%'}    src={pic2
+                  } />
 
+                  <p className='text-center'> Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/> Lorem Ipsum has been the industry's standard dummy text ever since the 1500s,  a galley of type and scrambled it to make a type specimen book. </p>
+                  </div>
+                  <div className=' flex-col '>
+
+                    <Image className='rounded-lg mx-auto ' width={'100%'}    src={pic2
+                    } />
+
+                    <p className='text-center'> Lorem Lorem Ipsum is simply dummy text of the printing and typesetting industry. <br/>  Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, a galley of type and scrambled it to make a type specimen book. </p>
+                    </div>
           </div>
 
 
